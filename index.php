@@ -8,10 +8,11 @@
 <body>
     <?php
         
-        $path = '\\10.40.50.2\pliki'; 
-        $output = shell_exec("net use Z $path /user:uczen uczenpti 2>&1");
+    $path = '\\10.40.30.2\pliki'; 
+    $output = shell_exec("net use W $path /user:uczen uczenpti 2>&1");
 
-        echo nl2br($output);
+    $files = scandir('W:');
+
 
     
     ?>
